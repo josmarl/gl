@@ -20,20 +20,19 @@ import com.pe.grupolinares.model.Usuario;
  */
 @SuppressWarnings("unchecked")
 @Repository(value = "usuarioDao")
-@Transactional
 public class UsuarioDaoImpl implements UsuarioDao {
 
     @Autowired
     private SessionFactory sessionFactory;
-
+    
    
 	@Override
     public List<Usuario> listUsuario() {
-        return this.getCurrentSession().createQuery("from Usuario u").list();
+        Session session=  this.sessionFactory.getCurrentSession();
+		List<Usuario> list = session.createQuery("from Usuario").list();
+        return list;
     }
 
-    public Session getCurrentSession() {
-        return sessionFactory.getCurrentSession();
-    }
+   
 
 }

@@ -6,6 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 	<c:forEach var="usuario" items="${usuarios}" varStatus="id">
 		<tr>
 			<td><c:out value="${usuario.nombres}"></c:out></td>
@@ -13,5 +14,8 @@
 			<td><c:out value="${usuario.direccion}"></c:out></td>
 		</tr>
 	</c:forEach>
+=======
+	Hola men soy Magwi
+>>>>>>> c890af238126ea803c022cc23990d25b69c32097
 </body>
 </html>
