@@ -10,7 +10,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import com.pe.grupolinares.dao.iface.UsuarioDao;
 import com.pe.grupolinares.model.Usuario;
 
@@ -24,15 +23,18 @@ public class UsuarioDaoImpl implements UsuarioDao {
 
     @Autowired
     private SessionFactory sessionFactory;
-    
-   
-	@Override
+
+    @Override
     public List<Usuario> listUsuario() {
-        Session session=  this.sessionFactory.getCurrentSession();
-		List<Usuario> list = session.createQuery("from Usuario").list();
+        Session session = this.sessionFactory.getCurrentSession();
+        List<Usuario> list = session.createQuery("from Usuario").list();
         return list;
     }
-
-   
+    
+    @Override
+    public void save(Usuario usuario){
+        Session session = this.sessionFactory.getCurrentSession();
+        session.persist(usuario);
+    }
 
 }

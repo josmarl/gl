@@ -7,6 +7,8 @@ package com.pe.grupolinares.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -14,110 +16,111 @@ import javax.persistence.Table;
 @Table(name = "usuario")
 public class Usuario {
 
-	@Id
-	@Column(name="id_usuario")
-	private int idUsuario;
-	@Column(name="dni")
-	private double dni;
-	@Column(name="nombres")
-	private String nombres;
-	@Column(name="direccion")
-	private String direccion;
-	@Column(name="email")
-	private String email;
-	@Column(name="celular")
-	private String celular;
-	@Column(name="cargo")
-	private String cargo;
-	@Column(name="login")
-	private String login;
-	@Column(name="PASSWORD")
-	private String password;
-	@Column(name="estado")
-	private String estado;
+    @Id
+    @Column(name = "id_usuario")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idUsuario;
+    @Column(name = "dni")
+    private double dni;
+    @Column(name = "nombres")
+    private String nombres;
+    @Column(name = "direccion")
+    private String direccion;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "celular")
+    private String celular;
+    @Column(name = "cargo")
+    private String cargo;
+    @Column(name = "login")
+    private String login;
+    @Column(name = "PASSWORD")
+    private String password;
+    @Column(name = "estado")
+    private String estado;
 
-	public Usuario() {
+    public Usuario() {
 
-	}
+    }
 
-	public int getIdUsuario() {
-		return idUsuario;
-	}
+    public int getIdUsuario() {
+        return idUsuario;
+    }
 
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
-	}
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
-	public double getDni() {
-		return dni;
-	}
+    public double getDni() {
+        return dni;
+    }
 
-	public void setDni(double dni) {
-		this.dni = dni;
-	}
+    public void setDni(double dni) {
+        this.dni = dni;
+    }
 
-	public String getNombres() {
-		return nombres;
-	}
+    public String getNombres() {
+        return nombres;
+    }
 
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
-	}
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
 
-	public String getDireccion() {
-		return direccion;
-	}
+    public String getDireccion() {
+        return direccion;
+    }
 
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
-	}
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public String getCelular() {
-		return celular;
-	}
+    public String getCelular() {
+        return celular;
+    }
 
-	public void setCelular(String celular) {
-		this.celular = celular;
-	}
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
 
-	public String getCargo() {
-		return cargo;
-	}
+    public String getCargo() {
+        return cargo;
+    }
 
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
 
-	public String getLogin() {
-		return login;
-	}
+    public String getLogin() {
+        return login;
+    }
 
-	public void setLogin(String login) {
-		this.login = login;
-	}
+    public void setLogin(String login) {
+        this.login = login;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public String getEstado() {
-		return estado;
-	}
+    public String getEstado() {
+        return estado;
+    }
 
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 
 }

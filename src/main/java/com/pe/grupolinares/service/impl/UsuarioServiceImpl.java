@@ -30,4 +30,10 @@ public class UsuarioServiceImpl implements UsuarioService {
         return usuarioDao.listUsuario();
     }
 
+    @Override
+    @Transactional
+    public void save(Usuario usuario) {
+        usuarioDao.save(usuario);
+    }
+
 }

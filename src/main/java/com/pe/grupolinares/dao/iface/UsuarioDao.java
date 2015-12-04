@@ -16,4 +16,6 @@ public interface UsuarioDao {
 
     List<Usuario> listUsuario();
 
+    public void save(Usuario usuario);
+
 }

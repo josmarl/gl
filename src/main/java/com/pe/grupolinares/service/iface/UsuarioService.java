@@ -15,5 +15,7 @@ import com.pe.grupolinares.model.Usuario;
 public interface UsuarioService {
 
     List<Usuario> listUsuario();
+    
+    void save(Usuario usuario);
 
 }
