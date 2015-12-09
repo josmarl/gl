@@ -6,7 +6,7 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" ng-click="goToLogin()">Home</a></li>
                 <li><a href="#" ng-click="goToUsuarios()">Adm. Usuarios</a></li>
                 <li><a href="#" ng-click="goToClientes()">Adm. Clientes</a></li>
                 <li><a href="#">Page 3</a></li>
