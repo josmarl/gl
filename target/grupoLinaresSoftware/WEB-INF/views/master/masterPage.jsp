@@ -14,10 +14,13 @@
         <script type="text/javascript" src="<c:url value='/assets/libs/angular/angular-1.3.min.js'/>"></script>
         <script type="text/javascript" src="<c:url value='/assets/libs/angular/angular-resource.min.js'/>"></script>
         <script type="text/javascript" src="<c:url value='/assets/libs/angular/app.js'/>"></script>
+        
+        
     </head>
     <body ng-app="app">
         <div>
             <tiles:insertAttribute name="header" />
+            <script type="text/javascript" src="<c:url value='/assets/js/controllers/header.js'/>"></script>
         </div>
         <div class="container-fluid">
             <tiles:insertAttribute name="body" />
@@ -27,3 +30,4 @@
         </div>
     </body>
 </html>
+

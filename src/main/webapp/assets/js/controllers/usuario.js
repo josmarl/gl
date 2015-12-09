@@ -7,7 +7,7 @@ app.controller('ctrlUsuario', function ($scope, $http, $location) {
     $scope.nombres = '';
     $scope.direccion = '';
 
-    var actionUrl = '/grupoLinaresSoftware/getAll',
+    var actionUrl = '/grupoLinaresSoftware/getUsuarios',
             listUsuarios = function () {
                 $http.get(actionUrl).success(function (data) {
                     $scope.listaUsuarios = data;
@@ -21,6 +21,7 @@ app.controller('ctrlUsuario', function ($scope, $http, $location) {
         data.dni = $scope.dni;
         data.nombres = $scope.nombres;
         data.direccion = $scope.direccion;
+        console.log(data);
         $http.post("/grupoLinaresSoftware/usuario/add", data)
                 .then(function () {
                     listUsuarios();
