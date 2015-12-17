@@ -22,7 +22,7 @@
                         Comprobante<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Crear Factura</a></li>
+                        <li><a href="#" ng-click="goToFactura()">Crear Factura</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Crear Boleta</a></li>
                     </ul>

@@ -12,4 +12,7 @@ app.controller('ctrlHeader', function ($scope, $http, $location) {
     $scope.goToClientes = function () {
         location.href = actionUrl + '/clientes';
     };
+    $scope.goToFactura = function (){
+        location.href = actionUrl + '/factura';
+    };
 });
