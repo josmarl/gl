@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.pe.contable_contable_war_1.0.0-BUILD-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.pe.contable.model.ContTipoCambio</class>
+    <class>com.pe.contable.model.ContVentasDetalle</class>
+    <class>com.pe.contable.model.ContVentas</class>
+    <class>com.pe.contable.model.ContCliente</class>
+    <class>com.pe.contable.model.ContTipoDoc</class>
+    <class>com.pe.contable.model.ContCodigoAduana</class>
+    <class>com.pe.contable.model.ContPeriodo</class>
+    <class>com.pe.contable.model.ContNroDocVentas</class>
+    <class>com.pe.contable.model.ContEstadoComprobante</class>
+    <class>com.pe.contable.model.ContUsuario</class>
+    <class>com.pe.contable.model.ContTipoComprobante</class>
+    <class>com.pe.contable.model.ContSucursal</class>
+    <class>com.pe.contable.model.ContTipoCliente</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cont_comp_vent_db?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
